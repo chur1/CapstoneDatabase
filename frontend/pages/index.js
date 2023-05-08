@@ -15,7 +15,7 @@ export default function Home() {
   const {data, fetching, error} = results;
   const [searchTerm, setSearchTerm] = useState('');
   
-  // check for incoming data
+// check for incoming data
 if(fetching) return <p>Loading...</p>
 if(error) return <p>Oh no...</p>
 const products = data.products.data;
@@ -34,11 +34,11 @@ console.log(products);
         <body>
         </body>
         <Description>
-            <h1>Welcome to Man Expeditions</h1>
-            <h3>Explore Global Experiences</h3>
-            <h5>Get matched with like-minded travel buddies, and create extraordinary memories.</h5>
+            <h1>Welcome to AU Capstone</h1>
+            <h3>Explore Projects</h3>
+            <h5>Become inspired by previous projects developed by peers previously</h5>
             <Input>
-              <input className="center-block" type="text" placeholder="Search Your Next Trip..." onChange={(event)=>{setSearchTerm(event.target.value);}}/>
+              <input className="center-block" type="text" placeholder="Browse..." onChange={(event)=>{setSearchTerm(event.target.value);}}/>
             </Input>
         </Description>
         <Gallery>

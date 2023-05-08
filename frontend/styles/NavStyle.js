@@ -1,21 +1,5 @@
 import styled from "styled-components"
 
-// export const Logo = styled.nav`
-//     // min-height: 15vh;
-//     // display: flex;
-//     // justify-content: space-between;
-//     // alight-items: center;
-//     // font-size: 1rem;
-//     // a{
-//     //     font-size: 1.2rem;
-//     // }
-//     img{
-//         margin-left: 5px;
-//         padding: 0.4rem;
-//         width: 8%
-//     }
-
-// `;
 export const NavStyles = styled.div`
     
     min-height: 3rem;
@@ -31,8 +15,10 @@ export const NavStyles = styled.div`
         color: #f1f1f1;
     }
     img{
+        align-items: center;
+        justify-content:space-between;
         margin: 0.5rem;
-        max-width: 7rem;
+        max-width: 4rem;
     }
     
 `
@@ -53,4 +39,27 @@ export const NavItems = styled.div`
         flex-direction: column;
         align-items: center;
     }
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #f1f1f1;
+      }
+      
+      .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .hover-underline-animation:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
 `;

@@ -3,9 +3,13 @@ import styled from "styled-components"
 export const Input = styled.nav`
     
     background color: black;
-    padding-bottom: 4rem;
+    padding-bottom: 4.5rem;
     margin-bottom: 2rem;
     text-align: center;
+    input{
+        text-align: center;
+        padding: 0.5rem 8rem;
+    }
     input[type=text]{
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
