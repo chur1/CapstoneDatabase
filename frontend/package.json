@@ -11,12 +11,17 @@
   },
   "dependencies": {
     "@pdftron/webviewer": "^8.10.0",
+    "autoprefixer": "^10.4.14",
+    "cloudinary": "^1.36.4",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.1",
+    "formidable": "^2.1.1",
+    "js-cookie": "^3.0.5",
     "next": "13.0.1",
     "pspdfkit": "^2022.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-select": "^5.7.3",
     "styled-components": "^5.3.6",
     "urql": "^3.0.3"
   }

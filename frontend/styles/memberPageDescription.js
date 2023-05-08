@@ -1,10 +1,15 @@
 import styled from "styled-components"
 
 export const Description = styled.nav`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.227),rgba(0, 0, 0, 0.0)), url('https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg');
+
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.0)), url('https://res.cloudinary.com/dw4yarzye/image/upload/v1681814554/guy-g8ca115db9_1920_elxt1m.jpg');
     background-size: cover;
     background-attachment: fixed;
-    // background-color: black;
+    background-position-x: center; /* Add this line */
+    background-position-y: 850px;
+
+    
     h1{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 300;
@@ -34,3 +39,4 @@ export const Description = styled.nav`
     }
 
 `;
+

@@ -3,6 +3,7 @@ query{
     products{
       data{
         attributes{
+          category
           title
           description
           price
@@ -32,6 +33,7 @@ export const GET_PRODUCT_QUERY = `
     products(filters: {slug: {eq: $slug}}){
       data{
         attributes{
+          category
           title
           description
           price

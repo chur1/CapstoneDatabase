@@ -19,15 +19,6 @@ export const DetailsStyle = styled.div`
         color: #f1f1f1;
         margin-bottom: 1rem;
     }
-    
-    h1{
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 400;
-        color: #f1f1f1;
-        margin-bottom: 1rem;
-    }
-
     p{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 200;
@@ -41,40 +32,12 @@ export const ProductInfo = styled.div`
     div{
         margin: 1rem;
     }
-    /* button{
+    button{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 400;
         font-size: 1rem;
         font-weight: medium;
         padding: 0.5rem 1rem;
         border-radius: 20px;
-    } */
-    
-    .hover-underline-animation {
-        margin-top: 4rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 100;
-        font-size: 20px;
-        display: inline-block;
-        position: relative;
-        color: #f1f1f1;
-    }
-      
-    .hover-underline-animation::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #f1f1f1;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-      
-    .hover-underline-animation:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
     }
 `
