@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "concurrently \"strapi develop\" \"cd ../frontend && npm run dev\"",
     "build": "strapi build",
     "strapi": "strapi"
   },
@@ -15,7 +15,8 @@
     "@strapi/plugin-users-permissions": "4.4.6",
     "@strapi/provider-upload-cloudinary": "^4.4.6",
     "@strapi/strapi": "4.4.6",
-    "better-sqlite3": "7.4.6"
+    "better-sqlite3": "7.4.6",
+    "concurrently": "^8.0.1"
   },
   "author": {
     "name": "A Strapi developer"
