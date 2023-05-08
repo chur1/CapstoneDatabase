@@ -25,6 +25,22 @@ export const DetailsStyle = styled.div`
         color: #f1f1f1;
         margin-bottom: 0.5rem;
     }
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        color: #f1f1f1;
+        margin-bottom: 1rem;
+    }
+
+    form{
+        display: flex;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        color: #f1f1f1;
+        width: 1000rem;
+        margin: 5rem;
+    }
+
 `;
 
 export const ProductInfo = styled.div`

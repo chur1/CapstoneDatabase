@@ -49,32 +49,34 @@ function App() {
   }
  
   return (
-    <div className="App">
-      <Select
-        placeholder="Select Option"
-        value={option.find(obj => obj.value === selectedValue)} // set selected value
-        options={option} // set list of the data
-        onChange={handleChange} // assign onChange function
-        multi={true}
-      />
+    <Layout user={user}>
+      <div className="App">
+        <Select
+          placeholder="Select Option"
+          value={option.find(obj => obj.value === selectedValue)} // set selected value
+          options={option} // set list of the data
+          onChange={handleChange} // assign onChange function
+          multi={true}
+        />
 
 
-      {/* {selectedValue && <div style={{ marginTop: 20, lineHeight: '25px' }}>
-        <div><b>Selected Value: </b> {selectedValue}</div>
-      </div>} */}
-        <Gallery>
-          {/* search function */}
-          {products.filter((product)=> {
-            if(selectedValue == ""){
-              return product
-            } else if (product.attributes.category.toLowerCase().includes(selectedValue.toLowerCase())){
-              return product
-            }
-          }).map((product) => (
-            <Products key={product.attributes.slug} product = {product}/>
-          ))}
-        </Gallery>
-    </div>
+        {/* {selectedValue && <div style={{ marginTop: 20, lineHeight: '25px' }}>
+          <div><b>Selected Value: </b> {selectedValue}</div>
+        </div>} */}
+          <Gallery>
+            {/* search function */}
+            {products.filter((product)=> {
+              if(selectedValue == ""){
+                return product
+              } else if (product.attributes.category.toLowerCase().includes(selectedValue.toLowerCase())){
+                return product
+              }
+            }).map((product) => (
+              <Products key={product.attributes.slug} product = {product}/>
+            ))}
+          </Gallery>
+      </div>
+    </Layout>
   );
 }
  
