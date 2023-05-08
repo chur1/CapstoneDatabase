@@ -16,19 +16,18 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "maxLength": 100,
-      "minLength": 10
+      "maxLength": 100
     },
     "description": {
       "type": "string"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "slug": {
       "type": "uid",
@@ -38,6 +37,17 @@
     "price": {
       "type": "float",
       "required": true
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "category": {
+      "type": "string"
     }
   }
 }
